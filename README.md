@@ -53,7 +53,7 @@
   </summary>
   <br />
 
-  This is the script I am describing: [Likelihood of buying modelling script](./likelyhood_of_buying_gloves.ipynb)
+  This is the script I am describing: [Likelihood of buying script](./likelyhood_of_buying_gloves.ipynb)
 
   We want to have a certain amount of orders based on age and gender. 
   We will consider three situations for each gender:
@@ -68,4 +68,20 @@
   ![image](https://github.com/user-attachments/assets/030964f6-d112-4acd-91ad-b568f8b7e243)
 
 </details>
-   
+
+
+<details>
+  <summary>
+    <h2>User Registration</h2>
+  </summary>
+  <br />
+
+  This is the script I am describing: [User Registration Over Time](./user_registration_modelling.ipynb)
+
+  With this script I basically wanted to show a tendency of more and more users registrating over time. An exponential growth of user registrations.
+
+  The image below represents the number of users registered in each day.
+
+  ![image](https://github.com/user-attachments/assets/a21d8b11-13b5-42f1-b928-26ed7ffbbc5f)
+  
+</details>
