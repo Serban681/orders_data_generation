@@ -1,5 +1,7 @@
 ﻿# Generation of Orders
 
+This repo contains all the necessary parts in order to generate enough data to train an orders prediction model based on user data, previous orders and indiviual characteristics of each user.
+
 <details>
   <summary>
     <h2>Users Generation</h2>
@@ -116,8 +118,41 @@
 
   Finally we get to use all that data we genreated earlier and combine it into something more practical that we can use to test the API and train the model.
 
+  First I assign to each user a random registration date from the ones generated before.
   ```python
   users_df['registration_date'] = shuffled_registration_dates_list[:len(users_df)]
+  ```
+
+  This is the main algorithm that combines both the users and orders data frames in order to asociate a user to each order
+  ```python
+  def create_orders(buyers_df, orders_df):
+    for index, row in orders_date_df.iterrows():
+        buyers_df = assign_probability_to_first_time_buyers(row['date'], buyers_df)
+  
+        if buyers_df is not None and not buyers_df.empty:
+            for i in range(int(row['number_of_orders'])):
+                userIndex = pick_based_on_probability(buyers_df['probability'].values)
+  
+                pickedBuyer = buyers_df.iloc[userIndex]
+                orderEntry = pd.DataFrame({'date': [row['date']], 'userId': pickedBuyer['id']})
+                
+                newProbability, newBuyerType = get_probability_by_age_gender(pickedBuyer['age'], pickedBuyer['gender'], pickedBuyer['buyer_type'])
+  
+                buyers_df.iloc[userIndex, buyers_df.columns.get_loc('probability')] = newProbability
+                buyers_df.iloc[userIndex, buyers_df.columns.get_loc('buyer_type')] = newBuyerType
+  
+                orders_df = pd.concat([orders_df, orderEntry])
+  
+    return orders_df
+  ```
+
+  This is the data we end up with. I can add more details like payment type in the api, but our job is done here as we have succesfully asociated a user to each order.
+  ```json
+  {
+    "date":"2021-03-30",
+    "userId":1073,
+    "productId":0
+  }
   ```
   
 </details>
