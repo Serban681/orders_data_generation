@@ -53,7 +53,7 @@
   </summary>
   <br />
 
-  Here is the script for this part: [Likelihood of buying modelling script](./likelyhood_of_buying_gloves.ipynb)
+  This is the script I am describing: [Likelihood of buying modelling script](./likelyhood_of_buying_gloves.ipynb)
 
   We want to have a certain amount of orders based on age and gender. 
   We will consider three situations for each gender:
