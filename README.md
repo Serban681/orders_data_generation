@@ -1,8 +1,10 @@
 ﻿# Generation of Orders
 
 <details>
-  <summary>Users Generation</summary>
-  
+  <summary>
+    <h2>Users Generation</h2>
+  </summary>
+  <br />
   The purpose for this project was to generate training data for a order prediction model. I used __synthetic data generation__ technique using mockaroo in order     to generate user data for my app. Here is an example:
   
   ```json
@@ -43,5 +45,9 @@
   
       I used two normal distributions scaled them and concatenated them. Then I created CSVs and added them to mockaroo in order to assign the age to each user.   
 
+</details>
+
+<details>
+  
 </details>
    
