@@ -7,7 +7,7 @@ This repo contains all the necessary parts in order to generate enough data to t
     <h2>Users Generation</h2>
   </summary>
   <br />
-  The purpose for this project was to generate training data for a order prediction model. I used __synthetic data generation__ technique using mockaroo in order     to generate user data for my app. Here is an example:
+  The purpose for this project was to generate training data for a order prediction model. I used synthetic data generation technique using mockaroo in order     to generate user data for my app. Here is an example:
   
   ```json
   {
