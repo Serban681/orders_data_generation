@@ -49,7 +49,7 @@
 
 <details>
   <summary>
-    <h2>Likelihood of buying boxing</h2>
+    <h2>Likelihood of buying boxing gloves</h2>
   </summary>
   <br />
 
