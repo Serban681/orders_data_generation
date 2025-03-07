@@ -114,7 +114,7 @@
 
   This is the script I am describing: [Orders Generation](./order_generation.ipynb)
 
-  Finally we get to use all that data we genreated earlier and get to combine it into something more practical that we can use to test the API and train the model.
+  Finally we get to use all that data we genreated earlier and combine it into something more practical that we can use to test the API and train the model.
 
   ```python
   users_df['registration_date'] = shuffled_registration_dates_list[:len(users_df)]
