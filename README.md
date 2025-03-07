@@ -85,3 +85,39 @@
   ![image](https://github.com/user-attachments/assets/a21d8b11-13b5-42f1-b928-26ed7ffbbc5f)
   
 </details>
+
+<details>
+  <summary>
+    <h2>Orders Modelling</h2>
+  </summary>
+  <br />
+
+  This is the script I am describing: [Orders Modelling](./boxing_gloves_orders_modelling.ipynb)  
+
+  To achieve the following model I divided each year into four seasons each with it's own function:
+    
+  - Winter - an exponential function
+  - Spring - a logarithmic function
+  - Summer - a linear function
+  - Autumn - just a random poison distribution
+
+  The image bellow represents the total number of orders over time:
+  
+  ![image](https://github.com/user-attachments/assets/c8a95c04-32df-4cdc-881a-723c4368ba0d)
+</details>
+
+<details>
+  <summary>
+    <h2>Orders Generation</h2>
+  </summary>
+  <br />
+
+  This is the script I am describing: [Orders Generation](./order_generation.ipynb)
+
+  Finally we get to use all that data we genreated earlier and get to combine it into something more practical that we can use to test the API and train the model.
+
+  ```python
+  users_df['registration_date'] = shuffled_registration_dates_list[:len(users_df)]
+  ```
+  
+</details>
