@@ -51,7 +51,21 @@
   <summary>
     <h2>Likelihood of buying boxing</h2>
   </summary>
+  <br />
 
-  
+  Here is the script for this part: [Likelihood of buying modelling script](./likelyhood_of_buying_gloves.ipynb)
+
+  We want to have a certain amount of orders based on age and gender. 
+  We will consider three situations for each gender:
+    - The user is a first time buyer
+    - The user is a second time buyer
+    - The user is buys for the third time or beyond
+
+  Naturally the likelihood decreases as users buy more and more of that specific product. Since we are modelling the likelihood of buying for boxing gloves we will create a higher tendency of buying among young men.
+
+  Here is an example:
+
+  ![image](https://github.com/user-attachments/assets/030964f6-d112-4acd-91ad-b568f8b7e243)
+
 </details>
    
