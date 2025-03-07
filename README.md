@@ -43,11 +43,15 @@
      
      ![image](https://github.com/user-attachments/assets/91e833e4-e9d7-4b15-9652-cde6b3c35749)
   
-      I used two normal distributions scaled them and concatenated them. Then I created CSVs and added them to mockaroo in order to assign the age to each user.   
+     I used two normal distributions scaled them and concatenated them. Then I created CSVs and added them to mockaroo in order to assign the age to each user.   
 
 </details>
 
 <details>
+  <summary>
+    <h2>Likelihood of buying boxing</h2>
+  </summary>
+
   
 </details>
    
