@@ -59,9 +59,9 @@ This repo contains all the necessary parts in order to generate enough data to t
 
   We want to have a certain amount of orders based on age and gender. 
   We will consider three situations for each gender:
-    - The user is a first time buyer
-    - The user is a second time buyer
-    - The user is buys for the third time or beyond
+  - The user is a first time buyer
+  - The user is a second time buyer
+  - The user is buys for the third time or beyond
 
   Naturally the likelihood decreases as users buy more and more of that specific product. Since we are modelling the likelihood of buying for boxing gloves we will create a higher tendency of buying among young men.
 
